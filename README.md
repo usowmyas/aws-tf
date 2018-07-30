@@ -5,7 +5,7 @@ aws environment management using tf &amp; Jenkins
 
 ### Git cmds to clone and make changes
 
-* git clone https://github.com/usowmyas/aws-tf.git ( public , no credentials required )
+* git clone https://github.com/usowmyas/aws-tf.git
 * Navigate to sbapp-demo
 * Execute `git init`
 * Execute `git status`
@@ -19,10 +19,10 @@ aws environment management using tf &amp; Jenkins
 
 * **Install terraform**
  * SSH into your AWS EC2
- * sudo yum install -y zip unzip 
- *  unzip terraform_0.11.7_linux_amd64.zip
- * sudo mv terraform /usr/local/bin/
- * terraform --version ( should give you the terraform version)
+ * `sudo yum install -y zip unzip` 
+ * `unzip terraform_0.11.7_linux_amd64.zip`
+ * `sudo mv terraform /usr/local/bin/`
+ * `terraform --version` ( should give you the terraform version)
 
 
 ### Terraform plan 
