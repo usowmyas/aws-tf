@@ -2,6 +2,8 @@
 
 aws environment management using tf &amp; Jenkins
 
+![TF REMOTE STATE DESIGN](architecture/tfremotestate.PNG)
+
 ## Dev SetUp
 
 ### Git cmds to clone and make changes
