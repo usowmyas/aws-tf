@@ -25,7 +25,16 @@ aws environment management using tf &amp; Jenkins
  * `terraform --version` ( should give you the terraform version)
 
 
-### Terraform plan 
+### Terraform : local state
+
+* **terraform initilize**
+ * Start by intilizing `terraform init`
+* **terraform plan**
+ `terraform apply -var-file=../teraform.tfvars -out terraform.tfplan`
+* **terraform apply**
+ `terraform apply terraform.tfplan`
+* **terraform destroy**
+ `terraform destroy -state=terraform.tfstate`
 
 References:
 https://github.com/DavidAnson/markdownlint/blob/v0.11.0/doc/Rules.md#md034
