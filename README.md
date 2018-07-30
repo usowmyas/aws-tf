@@ -1,6 +1,9 @@
 # aws-tf
 aws environment management using tf &amp; Jenkins
 
+## terraform remote state design
+![](architecture/tfremotestate.PNG)
+
 ## Dev SetUp
 
 ### Git cmds to clone and make changes
@@ -28,7 +31,7 @@ aws environment management using tf &amp; Jenkins
 ### Terraform : local state
 
 * **terraform initilize**
- * Start by intilizing `terraform init`
+  Start by intilizing `terraform init`
 * **terraform plan**
  `terraform apply -var-file=../teraform.tfvars -out terraform.tfplan`
 * **terraform apply**
