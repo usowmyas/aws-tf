@@ -63,7 +63,7 @@ resource "aws_s3_bucket" "mtapps" {
     "Version": "2008-10-17",
     "Statement": [
         {
-            "Sid": "ReadforNetTeam",
+            "Sid": "ReadforInfraTeam",
             "Effect": "Allow",
             "Principal": {
                 "AWS": "${aws_iam_user.testuser.arn}"
