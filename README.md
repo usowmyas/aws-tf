@@ -2,7 +2,12 @@
 
 aws environment management using tf &amp; Jenkins
 
+<<<<<<< HEAD
 ![TF REMOTE STATE DESIGN](architecture/tfremotestate.PNG)
+=======
+## terraform remote state design
+![](architecture/tfremotestate.PNG)
+>>>>>>> e9126629c3d84de36dfb170d806783b31f1a99c9
 
 ## Dev SetUp
 
