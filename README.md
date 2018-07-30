@@ -6,7 +6,7 @@ aws environment management using tf &amp; Jenkins
 ### Git cmds to clone and make changes
 
 * git clone https://github.com/usowmyas/aws-tf.git
-* Navigate to sbapp-demo
+* Navigate to aws-tf
 * Execute `git init`
 * Execute `git status`
 * Change / Add a file 
