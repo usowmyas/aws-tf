@@ -1,6 +1,9 @@
 # aws-tf
 aws environment management using tf &amp; Jenkins
 
+## terraform remote state design
+![](architecture/tfremotestate.PNG)
+
 ## Dev SetUp
 
 ### Git cmds to clone and make changes
