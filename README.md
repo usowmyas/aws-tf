@@ -27,15 +27,21 @@ aws environment management using tf &amp; Jenkins
 * `sudo mv terraform /usr/local/bin/`
 * `terraform --version` ( should give you the terraform version)
 
-### Terraform : local state
+### Terraform : setting up needed S3 buckets and dynamo DB for configuring remote state
 
 * **terraform initilize**
   Start by intilizing `terraform init`
 * **terraform plan**
- `terraform apply -var-file=../teraform.tfvars -out terraform.tfplan`
+ Linux : `terraform plan -var-file=../terraform.tfvars -out terraform.tfplan`
+ Windows : `terraform plan --var-file=..\terraform.tfvars -out terraform.tfplan`
 * **terraform apply**
  `terraform apply terraform.tfplan`
 * **terraform destroy**
  `terraform destroy -state=terraform.tfstate`
+
+### Terraform : remote state
+
+* **terraform initialize**
+ `terrafrom init --var-file=../terraform.tfvars --backend-config="dynamodb_table=mt-tfstatelock" --backend-config="bucket=mt-infra" --backend-config="profile=devuser"`
 
 References:
